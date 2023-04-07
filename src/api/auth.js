@@ -1,4 +1,4 @@
-import client from './customAxios';
+import { client } from './customAxios';
 
 export const signInApi = async (email, password) => {
     return client.post('/auth/signin', { email, password });

@@ -1,4 +1,4 @@
-import client from './customAxios';
+import { client } from './customAxios';
 
 export const todosGetApi = async () => {
     return client.get('/todos');
