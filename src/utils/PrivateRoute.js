@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 
-export default function PrivateRoute(authentication) {
+export default function PrivateRoute({ authentication }) {
     const isAuthenticated = localStorage.getItem('accesstoken');
 
     if (authentication) {
