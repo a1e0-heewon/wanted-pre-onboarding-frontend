@@ -14,6 +14,6 @@ export default function PrivateRoute({ authentication }) {
     return isAuthenticated === null || isAuthenticated === 'false' ? (
         <Outlet />
     ) : (
-        <Navigate to="/" />
+        <Navigate to="/todo" />
     );
 }
