@@ -4,8 +4,8 @@ export const todosGetApi = async () => {
     return client.get('/todos');
 };
 
-export const todosPostApi = async () => {
-    return client.post('/todos');
+export const todosPostApi = async todo => {
+    return client.post('/todos', { todo });
 };
 
 export const updateTodoApi = async (id, todo, isCompleted) => {
